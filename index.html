@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Akshar Lesar Art</title>
+<meta name="description" content="Akshar Lesar Art — Premium Laser Cutting, Engraving & Metal Marking. Akshar Lesar Art, Sara road, Halvad."/>
+<style>
+:root{
+  --bg:#050505; --card:#0b0b0b; --gold1:#D4AF37; --gold2:#B8860B; --muted:#cfcfcf;
+  font-family: 'Poppins', system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg); color:var(--muted);line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo-wrap{width:76px;height:76px;display:flex;align-items:center;justify-content:center;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.brand h1{margin:0;font-size:18px;color:#fff;letter-spacing:0.6px}
+.nav{display:flex;gap:12px;align-items:center}
+.btn{padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);cursor:pointer;font-weight:600}
+.cta{background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#050505;border:0;padding:9px 14px;border-radius:12px;box-shadow:0 6px 20px rgba(212,175,55,0.12)}
+.hero{display:flex;gap:28px;align-items:center;margin:28px 0}
+.hero-left{flex:1}
+.hero-right{width:420px;border-radius:12px;overflow:hidden}
+.hero-title{font-size:36px;color:#fff;margin:0}
+.hero-sub{color:var(--muted);margin-top:12px}
+.hero-ctas{display:flex;gap:10px;margin-top:16px}
+.stats{display:flex;gap:10px;margin-top:16px}
+.stat{background:linear-gradient(90deg, rgba(212,175,55,0.04), rgba(184,134,11,0.02));padding:8px 10px;border-radius:10px}
+.card{background:var(--card);border-radius:12px;padding:18px;margin:18px 0;box-shadow:0 8px 28px rgba(0,0,0,0.6)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:980px){.hero{flex-direction:column}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.nav{display:none}}
+.service-item{display:flex;gap:12px;align-items:flex-start}
+.service-item img{width:64px;height:64px;object-fit:cover;border-radius:8px;border:2px solid rgba(212,175,55,0.04)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:980px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}}
+.portfolio-grid img{width:100%;height:160px;object-fit:cover;border-radius:10px;border:3px solid rgba(255,255,255,0.03)}
+.footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));display:flex;justify-content:space-between;align-items:center;gap:12px}
+.copy-small{font-size:13px;color:#9b9b9b}
+.contact-list{display:flex;flex-direction:column;gap:6px}
+.icon{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border-radius:8px}
+a{color:var(--gold1);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <!-- simple SVG logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 1200 1200">
+          <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#B8860B"/></linearGradient></defs>
+          <rect width="1200" height="1200" rx="200" fill="#0b0b0b"/>
+          <rect x="160" y="880" width="880" height="40" rx="20" fill="url(#g1)" transform="rotate(-25 600 600)" opacity="0.95"/>
+          <path d="M420 830 L520 380 L620 830 Z" fill="none" stroke="url(#g1)" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M540 660 L690 660" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
+          <path d="M690 660 L690 830" stroke="url(#g1)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div style="font-weight:700;color:#fff">Akshar Lesar Art</div>
+        <div style="font-size:13px;color:var(--muted)">Precision • Creativity • Technology</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="btn" onclick="scrollToId('home')">Home</button>
+      <button class="btn" onclick="scrollToId('about')">About</button>
+      <button class="btn" onclick="scrollToId('services')">Services</button>
+      <button class="btn" onclick="scrollToId('portfolio')">Portfolio</button>
+      <button class="btn" onclick="scrollToId('download')">Downloads</button>
+      <button class="btn" onclick="scrollToId('contact')">Contact</button>
+      <a class="cta" href="https://wa.me/9274503566" target="_blank" rel="noopener">Order Now</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-left">
+      <div style="display:inline-block;padding:6px 10px;border-radius:8px;background:linear-gradient(90deg, rgba(212,175,55,0.12), rgba(184,134,11,0.08));color:#fff;font-weight:700">Premium • Black & Gold</div>
+      <h2 class="hero-title">Akshar Lesar Art</h2>
+      <p class="hero-sub">Premium Laser Cutting, Engraving & Metal Marking Solutions — MDF, Acrylic, Wood, Stainless Steel, Brass, Aluminium. 30W Metal Marking (no color marking).</p>
+      <div class="hero-ctas">
+        <a class="cta" href="https://wa.me/9274503566" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn" href="#download">Download Files</a>
+        <button class="btn" onclick="scrollToId('contact')">Get a Quote</button>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong style="color:#fff">30W</strong><div style="font-size:13px">Metal Marking</div></div>
+        <div class="stat"><strong style="color:#fff">100+</strong><div style="font-size:13px">Designs Ready</div></div>
+        <div class="stat"><strong style="color:#fff">Fast</strong><div style="font-size:13px">On-time Delivery</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1581090464777-41a7f1e565d7?q=80&w=1200" alt="Premium laser background" style="width:100%;height:100%;object-fit:cover;display:block"/>
+    </div>
+  </main>
+
+  <section id="about" class="card">
+    <h3 style="color:#fff">About Akshar Lesar Art</h3>
+    <p>Akshar Lesar Art provides professional laser cutting, engraving and metal marking services. We operate CO2 Laser, CNC and an advanced 30W Metal Marking Machine. We work on MDF, Acrylic, Wood, Stainless Steel, Brass and Aluminium. Our mission: deliver outstanding quality with on-time service.</p>
+    <div style="display:flex;gap:18px;margin-top:14px;flex-wrap:wrap">
+      <div style="flex:1;min-width:220px">
+        <div style="color:#fff;font-weight:700">Our Vision</div>
+        <div class="copy-small">To be the trusted provider of precise, creative, and durable laser & metal-marked products.</div>
+      </div>
+      <div style="flex:1;min-width:220px">
+        <div style="color:#fff;font-weight:700">Materials</div>
+        <div class="copy-small">MDF, Acrylic, Wood, Leather, Stainless Steel, Brass, Aluminium</div>
+      </div>
+      <div style="flex:1;min-width:220px">
+        <div style="color:#fff;font-weight:700">Equipment</div>
+        <div class="copy-small">CO2 Laser, CNC, 30W Metal Marking Machine</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="card">
+    <h3 style="color:#fff">Services</h3>
+    <div class="grid" style="margin-top:12px">
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1581092334650-76a1c8f0a52b?q=80&w=1200" alt="MDF Laser Cutting"/>
+        <div>
+          <div style="color:#fff;font-weight:700">MDF Laser Cutting</div>
+          <div style="font-size:13px">Precision MDF cutting for panels, frames and furniture jali.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1615361200804-005ed8d5accc?q=80&w=1200" alt="Acrylic Cutting"/>
+        <div>
+          <div style="color:#fff;font-weight:700">Acrylic Cutting & Engraving</div>
+          <div style="font-size:13px">Signs, LED frames, and decorative pieces.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1200" alt="Wooden Portrait"/>
+        <div>
+          <div style="color:#fff;font-weight:700">Wooden Portraits</div>
+          <div style="font-size:13px">Custom wooden portraits from photos.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1601924582975-7d4bde098b5b?q=80&w=1200" alt="Metal Keychain"/>
+        <div>
+          <div style="color:#fff;font-weight:700">Metal Marking & Engraving</div>
+          <div style="font-size:13px">Stainless Steel, Brass, Aluminium — pens, keychains, cards.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1605516473190-d8cfb7db5b8d?q=80&w=1200" alt="Acrylic LED Frame"/>
+        <div>
+          <div style="color:#fff;font-weight:700">Customized Gifts</div>
+          <div style="font-size:13px">Personalized gift packages for events & corporate needs.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1605516473111-8c3b4df38d34?q=80&w=1200" alt="Metal Visiting Card"/>
+        <div>
+          <div style="color:#fff;font-weight:700">Name Plates & Signage</div>
+          <div style="font-size:13px">Business and personal nameplates with fine finishes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="card">
+    <h3 style="color:#fff">Portfolio</h3>
+    <div class="portfolio-grid" style="margin-top:12px">
+      <img src="https://images.unsplash.com/photo-1604328698692-e3657a3f98aa?q=80&w=1200" alt="Mandala Art"/>
+      <img src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1f52?q=80&w=1200" alt="Interior Jali Panel"/>
+      <img src="https://images.unsplash.com/photo-1605516473107-1f7e3feeb4fc?q=80&w=1200" alt="Engraving Close-up"/>
+      <img src="https://images.unsplash.com/photo-1601924582975-7d4bde098b5b?q=80&w=1200" alt="Keychain"/>
+      <img src="https://images.unsplash.com/photo-1600181952234-83c3ddb38b5f?q=80&w=1200" alt="Engraved Pen"/>
+      <img src="https://images.unsplash.com/photo-1605516473190-d8cfb7db5b8d?q=80&w=1200" alt="Acrylic LED Frame"/>
+      <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1200" alt="Wooden Portrait"/>
+      <img src="https://images.unsplash.com/photo-1605516473111-8c3b4df38d34?q=80&w=1200" alt="Metal Card"/>
+    </div>
+  </section>
+
+  <section id="download" class="card">
+    <h3 style="color:#fff">Download Files</h3>
+    <p class="copy-small">Free & premium DXF / SVG files available. Personal and commercial licenses offered.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+      <div style="background:linear-gradient(90deg, rgba(212,175,55,0.06), rgba(184,134,11,0.03));padding:10px;border-radius:10px;min-width:200px">
+        <div style="font-weight:700;color:#fff">Mandala Pack</div>
+        <div class="small">DXF, SVG • 12 files • Free</div>
+      </div>
+      <div style="background:linear-gradient(90deg, rgba(212,175,55,0.06), rgba(184,134,11,0.03));padding:10px;border-radius:10px;min-width:200px">
+        <div style="font-weight:700;color:#fff">Nameplate Basics</div>
+        <div class="small">DXF, SVG • 8 files • Paid</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h3 style="color:#fff">Contact</h3>
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <div style="flex:1;min-width:260px">
+        <div class="contact-list">
+          <div><strong>Phone:</strong> 6353350650</div>
+          <div><strong>WhatsApp:</strong> <a href="https://wa.me/9274503566">9274503566</a></div>
+          <div><strong>Email:</strong> <a href="mailto:aksharlaserart@gmail.com">aksharlaserart@gmail.com</a></div>
+          <div><strong>Address:</strong> Sara road, Halvad</div>
+          <div><strong>Hours:</strong> Mon–Sat 9:30 AM – 7:00 PM</div>
+        </div>
+        <div style="margin-top:12px">
+          <a class="cta" href="https://wa.me/9274503566" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <form onsubmit="submitForm(event)">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <input id="name" placeholder="Name" required style="padding:10px;border-radius:8px;border:0;background:#0f0f0f;color:#fff"/>
+            <input id="email" type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:0;background:#0f0f0f;color:#fff"/>
+            <input id="phone" placeholder="Phone" style="padding:10px;border-radius:8px;border:0;background:#0f0f0f;color:#fff"/>
+            <select id="service" style="padding:10px;border-radius:8px;border:0;background:#0f0f0f;color:#fff">
+              <option value="Inquiry">Service Required</option>
+              <option>Laser Cutting</option>
+              <option>Acrylic Engraving</option>
+              <option>Metal Marking</option>
+              <option>Customized Gift</option>
+            </select>
+            <textarea id="message" placeholder="Message / File details" style="padding:10px;border-radius:8px;border:0;background:#0f0f0f;color:#fff"></textarea>
+            <button class="cta" type="submit">Send Message</button>
+          </div>
+          <div id="formMessage" style="margin-top:8px;color:#9b9b9b;font-size:13px"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <div style="font-weight:700;color:#fff">Akshar Lesar Art</div>
+      <div class="copy-small">© 2025 Akshar Lesar Art — All Rights Reserved</div>
+    </div>
+    <div style="text-align:right">
+      <div class="small">Contact: 6353350650 | aksharlaserart@gmail.com</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'})}
+function submitForm(e){
+  e.preventDefault();
+  var name=document.getElementById('name').value||'—';
+  var email=document.getElementById('email').value||'—';
+  var phone=document.getElementById('phone').value||'—';
+  var service=document.getElementById('service').value||'—';
+  var message=document.getElementById('message').value||'—';
+  var body='Name: '+name+'%0AEmail: '+email+'%0APhone: '+phone+'%0AService: '+service+'%0AMessage: '+message;
+  window.location.href='mailto:aksharlaserart@gmail.com?subject=Website Inquiry - '+encodeURIComponent(service)+'&body='+body;
+  document.getElementById('formMessage').innerText='Opening your mail client to send the inquiry. Alternatively use WhatsApp.';
+}
+</script>
+</body>
+</html>
